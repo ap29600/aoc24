@@ -6,7 +6,7 @@ bad:("#"=,/in)@N!
 turn:(4*N)!(1 3*N)+\:
 step:(1;W;-1;-W)@(-N)!
 
-forward:{$[~#r:(~^y@)_?x@k!z
+forward:{$[~#r:(~^y@)_?x@k!z:(~#x@k!)(1+)/z
   (x;y;1+z)
   (@[x;k!0 1+z;(:;,);bad_'(,/turn r;r+step r)]; @[y;r;:;z]; 1+z)]}
  
